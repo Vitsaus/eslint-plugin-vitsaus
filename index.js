@@ -13,12 +13,12 @@ module.exports.rules = {
 module.exports.configs = {
   recommended: {
     rules: {
-      'vitsaus/newline-after-class': 2,
-      'vitsaus/newline-after-function': 2,
-      'vitsaus/newline-after-if': 2,
-      'vitsaus/newline-before-class': 2,
-      'vitsaus/newline-before-function': 2,
-      'vitsaus/newline-before-if': 2,
+      'vitsaus/newline-after-class': 1,
+      'vitsaus/newline-after-function': 1,
+      'vitsaus/newline-after-if': 1,
+      'vitsaus/newline-before-class': 1,
+      'vitsaus/newline-before-function': 1,
+      'vitsaus/newline-before-if': 1,
     },
   },
 };
