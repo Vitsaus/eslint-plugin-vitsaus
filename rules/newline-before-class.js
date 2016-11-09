@@ -17,7 +17,7 @@ module.exports = {
 
                     context.report({
                         node: node,
-                        message: "There must be one newline befor class declaration"
+                        message: "There must be one newline before class declaration"
                     });
 
                 }

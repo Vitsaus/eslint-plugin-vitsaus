@@ -17,7 +17,7 @@ module.exports = {
 
                     context.report({
                         node: node,
-                        message: "There must be one newline befor if statement"
+                        message: "There must be one newline before if statement"
                     });
 
                 }
