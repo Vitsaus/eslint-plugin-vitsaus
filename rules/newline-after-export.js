@@ -17,7 +17,7 @@ module.exports = {
 
                     context.report({
                         node: node,
-                        message: "There must be one newline after class declaration"
+                        message: "There must be one newline after export declaration"
                     });
 
                 }
@@ -31,7 +31,7 @@ module.exports = {
 
                     context.report({
                         node: node,
-                        message: "There must be one newline after class declaration"
+                        message: "There must be one newline after export declaration"
                     });
 
                 }
