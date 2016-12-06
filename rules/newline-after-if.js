@@ -15,10 +15,14 @@ module.exports = {
 
                 if(afterToken && afterToken.loc.start.line !== node.loc.end.line + 2) {
 
-                    context.report({
-                        node: node,
-                        message: "There must be one newline after if statement"
-                    });
+                    if (afterToken.value !== 'else') {
+
+                        context.report({
+                            node: node,
+                            message: "There must be one newline after if statement"
+                        });
+
+                    }
 
                 }
 
