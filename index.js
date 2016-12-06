@@ -5,7 +5,7 @@ module.exports.rules = {
   'newline-after-export': require('./rules/newline-after-export'),
   'newline-after-function': require('./rules/newline-after-function'),
   'newline-after-if': require('./rules/newline-after-if'),
-  'newline-before-class': require('./rules/newline-before-export'),
+  'newline-before-export': require('./rules/newline-before-export'),
   'newline-before-function': require('./rules/newline-before-function'),
   'newline-before-if': require('./rules/newline-before-if')
 };
