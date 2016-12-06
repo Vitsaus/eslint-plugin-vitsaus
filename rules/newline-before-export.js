@@ -1,7 +1,7 @@
 module.exports = {
     meta: {
         docs: {
-            description: "enforce one newline before class declaration",
+            description: "enforce one newline before export declaration",
             category: "Stylistic Issues",
             recommended: false
         },
