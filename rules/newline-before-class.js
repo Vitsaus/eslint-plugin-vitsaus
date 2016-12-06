@@ -9,23 +9,23 @@ module.exports = {
     },
     create: function(context) {
         return {
-            ClassDeclaration: function(node) {
+            ExportDefaultDeclaration: function(node) {
 
                 var beforeToken = context.getTokenBefore(node);
 
-                if (!beforeToken) return;
+                if(beforeToken && beforeToken.loc.end.line !== node.loc.start.line - 2) {
 
-                if (beforeToken.value === 'default' && beforeToken.type === 'Keyword') {
-
-                    beforeToken = context.getTokenBefore(beforeToken);
-
-                    if (beforeToken.value === 'export' && beforeToken.type === 'Keyword') {
-
-                        beforeToken = context.getTokenBefore(beforeToken);
-
-                    }
+                    return context.report({
+                        node: node,
+                        message: "There must be one newline before class declaration"
+                    });
 
                 }
+
+            },
+            ExportNamedDeclaration: function(node) {
+
+                var beforeToken = context.getTokenBefore(node);
 
                 if(beforeToken && beforeToken.loc.end.line !== node.loc.start.line - 2) {
 
